@@ -51,3 +51,15 @@ let otherChars = playground[anotherRange]
 let empty = ""
 var isEmpty = (empty.startIndex == empty.endIndex)
 isEmpty = empty.isEmpty
+
+var tale = """
+    It was the best of times,
+    it was the worst of times.
+"""
+print(tale)
+
+tale = """
+    It was the best of times,
+    it was the worst of times.
+    """
+print(tale)
