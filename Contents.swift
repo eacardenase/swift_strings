@@ -40,8 +40,14 @@ let end = playground.index(start, offsetBy: 4)
 let fifthCharacter = playground[end] // yields "o"
 
 let range: ClosedRange<String.Index> = start...end // closed range
+//let range: Range<String.Index> = start..<end // half-open range
 let firstFiveChars = playground[range]
 
 //let anotherRange: PartialRangeThrough<String.Index> = ...end // one-sided range
+//let anotherRange: PartialRangeUpTo<String.Index> = ..<end // one-sided range
 let anotherRange: PartialRangeFrom<String.Index> = end... // one-sided range
 let otherChars = playground[anotherRange]
+
+let empty = ""
+var isEmpty = (empty.startIndex == empty.endIndex)
+isEmpty = empty.isEmpty
